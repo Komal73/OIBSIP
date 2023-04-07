@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 95vw;
+}
+header{
+    position: fixed;
+    background: white;
+}
+.navbar{
+    display: flex;
+    height: 70px;   
+}
+.navbar li{
+    list-style: none;
+    margin: 0 12px;
+}
+.nav-name{
+    padding: 0 30px;
+    text-align: center;
+    padding-right: 335px;
+}
+.topleft{
+    width: 70%;
+    
+}
+.topright{
+    width: 25%;
+    
+}
+.section1{
+    min-height: 100vh;
+}
+.section1 h1{
+    font-size: 3rem;
+}
+.section1 p{
+    font-size: 1.3rem;
+}
+.left-p{
+    font-weight: 200px;
+    font-size: 3rem;
+    padding-bottom: 80px;
+}
+.font-size{
+    font-size: 1.5rem;
+}
+.dumbell{
+    width: 290px;
+    padding-left: 200px;
+    align-self: flex-start;
+}
+.topright .gym-image{
+    width: 666px;
+}
+.section2{
+    padding: 100px;
+}
+.section2 h1{
+    font-size: 2.8rem;
+}
+.section2 p{
+    padding: 0 8vw;
+    text-align: center;
+    
+}
+.box{
+    padding: 8px 0;
+    margin: 12px 12px;
+    min-width: 20vw;
+    border: 2px solid rgb(101, 163, 245);
+    border-radius: 8px;
+    text-align: center;
+}
+.highlighted{
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.box h2{
+    font-size: 2rem;
+    padding: 15px 0;
+}
+.box ul{
+    list-style: none;
+}
+.box ul li{
+    margin: 12px 2px;
+}
+.plantable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section3 h1{
+    font-size: 3rem;
+}
+.section3 table{
+    width: 100%;
+    margin: 40px 0;
+    border-collapse: collapse;
+    margin-bottom: 80px;
+    margin-top: 40px;
+}
+.section3 table th{
+    width: 18vw;
+    border-bottom: 0.5px solid black;
+    padding: 15px;
+    font-size: 1.2rem;
+}
+.section3 table td{
+    border-bottom: 0.5px solid black;
+}
+.section3 table tr{
+    border-bottom: 0.5px solid black;
+}
+.section3{
+    padding: 100px;
+}
+footer{
+    padding: 23px;
+    text-align: center;
+    font-weight: bold;
+}
