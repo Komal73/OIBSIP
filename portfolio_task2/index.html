@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komal's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e6b8d47c3a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="box">
+        <div class="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.jpeg" class="logo">
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="https://github.com/Komal73">GitHub</a></li>
+                        <li><a href="#blog">Blog</a></li>
+
+                    </ul>
+
+                </nav>
+                <div class="header-txt">
+                    <h1 id="hh1">Welcome.</h1>
+                    <h1>Hi, I'm <span>Komal</span>.</h1>
+                    <p>An Engineering Student</p>
+                    <p>A Programmer</p>
+                    <p>A Web Developer</p>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------About-------------------------->
+        <div class="about">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I am a Junior B.Tech student at Galgotias College of Engineering and Technology, Greater
+                            Noida majoring in Computer Science in Artificial Intelligence</p>
+                        <p>I am a programmer, front-end developer who writes clean, elegant and efficient code. I design
+                            and code beautifully simple things, and I love what I do. I aspire to be a Software
+                            Development Engineer.</p>
+                        <br><br>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+
+                                <li><span>Web Development</span><br> HTML <br>CSS <br>JavaScript</li>
+                                <li><span>Progamming</span><br>C++ <br>Data Structures and Algorithms <br>C <br>Python
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>Experience</span><br>Designing Web/App interfaces</li>
+                                <li><span>Web Development</span><br> Web App Designing</li>
+                                <li><span>App Development</span><br>Building Android/IiOS Apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2018</span><br>10th standard from APS, New Delhi</li>
+                                <li><span>2020</span><br>12th standard from RBS, New Delhi</li>
+                                <li><span>2023</span><br>Currently B.Tech 3rd year</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!---------------contact-------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p> <i class="fa-solid fa-location-dot"></i>Delhi, India</p>
+                        <p> <i class="fa-regular fa-envelope"></i> sharma3.komal@gmail.com</p>
+                        <div class="social-icon">
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="sharma3.komal@gmail.com"><i class="fa-regular fa-envelope"></i></i></a>
+                            <a href="https://twitter.com/Komal388"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/hustle_bustle03/"><i
+                                    class="fa-brands fa-instagram"></i></a>
+
+                        </div>
+                        <a href="images/Komal_Resume.pdf" class="btn btn2" download>My Resume</a>
+                    </div>
+                    <div class="contact-right">
+                        <p>Drop me a line!</p>
+                        <hr> <br> <br>
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="name" placeholder="Your name" required>
+                            <input type="email" name="email" placeholder="Your email" required>
+                            <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                            <button type="submit" class="btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            Copyright &copy; 2023 Komal | All rights reserved
+        </footer>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        } 
+    </script>
+
+</body>
+
+</html>
